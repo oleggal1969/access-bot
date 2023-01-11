@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230111215200">
+    <title></title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+   <div class="header__container">
+    <div class="header__logo logo">
+      <a class="logo__images" href="#">
+         <img class="logo__img" src="img/logo.svg" alt="Логотип Access Bot">
+      </a>
+    </div>
+   </div>
+</header>
+    <main class="page">
+      <section class="page__grade grade-page">
+        <div class="grade-page__container">
+          <h1 class="grade-page__title">
+            Інструмент для оцінки доступності вебсайтів
+          </h1>
+          <form class="grade-page__form form-grade">
+            <div class="form-grade__item item-form-grade">
+              <input class="item-form-grade__input" type="url" aria-labelledby="Адреса сайта для оцінки"
+                placeholder="https://сайт.com.ua" required>
+              <label class="item-form-grade__label">Адреса сайту <span>(з https або http):</span></label>
+            </div>
+            <button class="form-grade__btn btn" type="submit">Тестувати</button>
+          </form>
+        </div>
+      </section>
+      <section class="page__results results">
+        <div class="results__container">
+          <h2 class="results__title">Результати тестування</h2>
+          <div class="results__test test-results">
+            <div class="test-results__item item-results">
+              <div class="item-results__image-ibg">
+                <picture><source srcset="img/image-1.webp" type="image/webp"><img class="item-results__img" src="img/image-1.jpg" alt="Зображення"></picture>
+              </div>
+              <div class="test-results__share share-results">
+                <div class="share-results__label _icon-link">Поділіться результатами</div>
+                <form class="share-results__form form-share">
+                  <input class="form-share__input" type="url" aria-labelledby="Адреса сайта"
+                    placeholder="https://сайт.com.ua" required>
+                  <button class="form-share__btn _icon-copy" type="submit"
+                    aria-labelledby="Поділіться результатами"></button>
+                </form>
+              </div>
+            </div>
+            <div class="test-results__checker checker-results">
+              <ul class="checker-results__list">
+                <li class="checker-results__item _icon-earth">Сайт: <span>https://www.apple.com/</span></li>
+                <li class="checker-results__item _icon-time">Час: <span>03.01.2023 14:19</span></li>
+                <li class="checker-results__item _icon-web">Перевірено сторінок: <span>5</span></li>
+                <li class="checker-results__item _icon-glass">Знайдено проблем: <span>12</span></li>
+                <li class="checker-results__item _icon-glass">Всього випадків: <span>59</span></li>
+              </ul>
+            </div>
+            <div class="test-results__indicator indicator-results">
+              <h4 class="indicator-results__title">Показник доступності</h4>
+              <div class="indicator-results__circle" aria-label="75%">75%</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__problem problem">
+        <div class="problem__container">
+          <div class="problem__item item-problem">
+            <h3 class="item-problem__title title_litle title_litle-red">Критичні проблеми</h3>
+            <div class="item-problem__violation violation">
+              <details class="violation__details">
+                <summary class="violation__label">Кнопки повинні мати видимий текст</summary>
+                <div class="violation__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatum perspiciatis sequi at,
+                  reprehenderit tempore delectus cumque culpa necessitatibus vitae officia dolore illum, ex enim quos
+                  rerum iure sint. Recusandae.
+                </div>
+              </details>
+              <details class="violation__details">
+                <summary class="violation__label">Зображення повинні містити альтернативний текст</summary>
+                <div class="violation__description description-violation">
+                  <div class="description-violation__content content-description">
+                    <h4 class="content-description__title">Чому це важливо</h4>
+                    <p class="content-description__text">
+                      Програми зчитування з екрана не мають можливості перекласти зображення в текст, навіть якщо
+                      зображення складається лише з тексту. Тому зображення повинні мати короткий описовий altтекст, щоб
+                      користувачі програми зчитування з екрана чітко розуміли зміст і призначення зображення.
+                    </p>
+                    <h4 class="content-description__title">Як вирішити проблему</h4>
+                    <p class="content-description__text">
+                      Переконайтеся, що всі інформаційні img-елементи мають короткий описовий альтернативний текст, а
+                      всі декоративні img-елементи мають порожні атрибути alt (приклад: alt="").
+                    </p>
+                  </div>
+                  <div class="description-violation__box">
+                    <table class="description-violation__table">
+                      <tbody class="description-violation__tbody">
+                        <tr class="description-violation__tr">
+                          <th class="description-violation__th description-violation__th_num">№</th>
+                          <th class="description-violation__th">Сторінка</th>
+                          <th class="description-violation__th">Селектор</th>
+                          <th class="description-violation__th">HTML</th>
+                          <th class="description-violation__th">Подробиці</th>
+                        </tr>
+                        <tr class="description-violation__tr">
+                          <td class="description-violation__td">1</td>
+                          <td class="description-violation__td">
+                            <ul class="description-violation__list">
+                              <li class="description-violation__item">https://ain.ua/tag/kryptovaliuty/</li>
+                              <li class="description-violation__item">https://ain.ua/tag/vijna/</li>
+                            </ul>
+                          </td>
+                          <td class="description-violation__td">
+                            <code>
+                              img[width="\31 "]:nth-child(6)
+                            </code>
+                          </td>
+                          <td class="description-violation__td">
+                            <code>
+                              img width="1" height="1" src="https://inv-nets.admixer.net/ev_prebid.aspx?cc=UA&amp;am-uid=c70287fb22ea4615baff50c58bd569a5&amp;zone=8A66D0C7-66B7-44DE-97B4-329D4A08894E&amp;device=25&amp;rule=EBBE562ABAD9-46EE-8FFAFA0B33593B04&amp;requestId=042938d8-9d7a-4d29-99d3-9e7eec7
+                           </code>
+                          </td>
+                          <td class="description-violation__td">
+                            <p>
+                              Елемент не має атрибута alt.
+                            </p>
+                          </td>
+                        </tr>
+                        <tr class="description-violation__tr">
+                          <td class="description-violation__td">2</td>
+                          <td class="description-violation__td">
+                            <ul class="description-violation__list">
+                              <li class="description-violation__item">https://ain.ua/tag/kryptovaliuty/</li>
+                              <li class="description-violation__item">https://ain.ua/tag/vijna/</li>
+                            </ul>
+                          </td>
+                          <td class="description-violation__td">
+                            <code>
+                              img[width="\31 "]:nth-child(6)
+                            </code>
+                          </td>
+                          <td class="description-violation__td">
+                            <code>
+                              img width="1" height="1" src="https://inv-nets.admixer.net/ev_prebid.aspx?cc=UA&amp;am-uid=c70287fb22ea4615baff50c58bd569a5&amp;zone=8A66D0C7-66B7-44DE-97B4-329D4A08894E&amp;device=25&amp;rule=EBBE562ABAD9-46EE-8FFAFA0B33593B04&amp;requestId=042938d8-9d7a-4d29-99d3-9e7eec7
+                           </code>
+                          </td>
+                          <td class="description-violation__td">
+                            <p>
+                              Елемент не має атрибута alt.
+                            </p>
+                          </td>
+                        </tr>
+                        <tr class="description-violation__tr">
+                          <td class="description-violation__td">3</td>
+                          <td class="description-violation__td">
+                            <ul class="description-violation__list">
+                              <li class="description-violation__item">https://ain.ua/tag/kryptovaliuty/</li>
+                              <li class="description-violation__item">https://ain.ua/tag/vijna/</li>
+                            </ul>
+                          </td>
+                          <td class="description-violation__td">
+                            <code>
+                              img[width="\31 "]:nth-child(6)
+                            </code>
+                          </td>
+                          <td class="description-violation__td">
+                            <code>
+                              img width="1" height="1" src="https://inv-nets.admixer.net/ev_prebid.aspx?cc=UA&amp;am-uid=c70287fb22ea4615baff50c58bd569a5&amp;zone=8A66D0C7-66B7-44DE-97B4-329D4A08894E&amp;device=25&amp;rule=EBBE562ABAD9-46EE-8FFAFA0B33593B04&amp;requestId=042938d8-9d7a-4d29-99d3-9e7eec7
+                           </code>
+                          </td>
+                          <td class="description-violation__td">
+                            <p>
+                              Елемент не має атрибута alt.
+                            </p>
+                          </td>
+                        </tr>
+                        <tr class="description-violation__tr">
+                          <td class="description-violation__td">4</td>
+                          <td class="description-violation__td">
+                            <ul class="description-violation__list">
+                              <li class="description-violation__item">https://ain.ua/tag/kryptovaliuty/</li>
+                              <li class="description-violation__item">https://ain.ua/tag/vijna/</li>
+                            </ul>
+                          </td>
+                          <td class="description-violation__td">
+                            <code>
+                              img[width="\31 "]:nth-child(6)
+                            </code>
+                          </td>
+                          <td class="description-violation__td">
+                            <code>
+                              img width="1" height="1" src="https://inv-nets.admixer.net/ev_prebid.aspx?cc=UA&amp;am-uid=c70287fb22ea4615baff50c58bd569a5&amp;zone=8A66D0C7-66B7-44DE-97B4-329D4A08894E&amp;device=25&amp;rule=EBBE562ABAD9-46EE-8FFAFA0B33593B04&amp;requestId=042938d8-9d7a-4d29-99d3-9e7eec7
+                           </code>
+                          </td>
+                          <td class="description-violation__td">
+                            <p>
+                              Елемент не має атрибута alt.
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </details>
+              <details class="violation__details">
+                <summary class="violation__label">Збільшення та масштабування не можна вимикати</summary>
+                <div class="violation__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatum perspiciatis sequi at,
+                  reprehenderit tempore delectus cumque culpa necessitatibus vitae officia dolore illum, ex enim quos
+                  rerum iure sint. Recusandae.
+                </div>
+              </details>
+            </div>
+          </div>
+          <div class="problem__item item-problem">
+            <h3 class="item-problem__title title_litle title_litle-orange">Серйозні проблеми</h3>
+            <div class="item-problem__violation violation">
+              <details class="violation__details">
+                <summary class="violation__label">Елементи повинні мати достатній кольоровий контраст</summary>
+                <div class="violation__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatum perspiciatis sequi at,
+                  reprehenderit tempore delectus cumque culpa necessitatibus vitae officia dolore illum, ex enim quos
+                  rerum iure sint. Recusandae.
+                </div>
+              </details>
+              <details class="violation__details">
+                <summary class="violation__label">Посилання повинні мати видимий текст</summary>
+                <div class="violation__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatum perspiciatis sequi at,
+                  reprehenderit tempore delectus cumque culpa necessitatibus vitae officia dolore illum, ex enim quos
+                  rerum iure sint. Recusandae.
+                </div>
+              </details>
+              <details class="violation__details">
+                <summary class="violation__label">
+                  Елементи ul та ol можуть безпосередньо містити лише елементи li, script або template
+                </summary>
+                <div class="violation__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatum perspiciatis sequi at,
+                  reprehenderit tempore delectus cumque culpa necessitatibus vitae officia dolore illum, ex enim quos
+                  rerum iure sint. Recusandae.
+                </div>
+              </details>
+              <details class="violation__details">
+                <summary class="violation__label">
+                  Елементи li повинні міститися безпосередньо в ul або ol
+                </summary>
+                <div class="violation__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatum perspiciatis sequi at,
+                  reprehenderit tempore delectus cumque culpa necessitatibus vitae officia dolore illum, ex enim quos
+                  rerum iure sint. Recusandae.
+                </div>
+              </details>
+            </div>
+          </div>
+          <div class="problem__item item-problem">
+            <h3 class="item-problem__title title_litle title_litle-yellow">Помірні проблеми</h3>
+            <div class="item-problem__violation violation">
+              <details class="violation__details">
+                <summary class="violation__label">Рівні заголовків повинні збільшуватися лише на один</summary>
+                <div class="violation__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatum perspiciatis sequi at,
+                  reprehenderit tempore delectus cumque culpa necessitatibus vitae officia dolore illum, ex enim quos
+                  rerum iure sint. Recusandae.
+                </div>
+              </details>
+              <details class="violation__details">
+                <summary class="violation__label">Документ повинен мати основну (main) семантичну область і лише одну
+                </summary>
+                <div class="violation__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatum perspiciatis sequi at,
+                  reprehenderit tempore delectus cumque culpa necessitatibus vitae officia dolore illum, ex enim quos
+                  rerum iure sint. Recusandae.
+                </div>
+              </details>
+              <details class="violation__details">
+                <summary class="violation__label">
+                  Орієнтири мають унікальну комбінацію ролі мітки або ролі та заголовка (тобто доступного імені)
+                </summary>
+                <div class="violation__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatum perspiciatis sequi at,
+                  reprehenderit tempore delectus cumque culpa necessitatibus vitae officia dolore illum, ex enim quos
+                  rerum iure sint. Recusandae.
+                </div>
+              </details>
+              <details class="violation__details">
+                <summary class="violation__label">
+                  Сторінка повинна містити заголовок рівня 1
+                </summary>
+                <div class="violation__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatum perspiciatis sequi at,
+                  reprehenderit tempore delectus cumque culpa necessitatibus vitae officia dolore illum, ex enim quos
+                  rerum iure sint. Recusandae.
+                </div>
+              </details>
+              <details class="violation__details">
+                <summary class="violation__label">
+                  Весь вміст сторінки повинен міститися в ключових областях
+                </summary>
+                <div class="violation__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatum perspiciatis sequi at,
+                  reprehenderit tempore delectus cumque culpa necessitatibus vitae officia dolore illum, ex enim quos
+                  rerum iure sint. Recusandae.
+                </div>
+              </details>
+            </div>
+          </div>
+          <div class="problem__item item-problem">
+            <h3 class="item-problem__title title_litle title_litle-blue">Незначні проблеми</h3>
+            <div class="item-problem__violation violation">
+              <details class="violation__details">
+                <summary class="violation__label">Значення атрибута id має бути унікальним</summary>
+                <div class="violation__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatum perspiciatis sequi at,
+                  reprehenderit tempore delectus cumque culpa necessitatibus vitae officia dolore illum, ex enim quos
+                  rerum iure sint. Recusandae.
+                </div>
+              </details>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__next next">
+        <div class="next__container">
+          <div class="next__content content-next">
+            <h2 class="content-next__title">Що далі?</h2>
+            <div class="content-next__text">
+              <p>
+                Враховуйте, що автоматичні тести виявляють лише близько 50% проблем із доступністю. Для виявлення всіх
+                проблем необхідно провести повний аудит, який повинен включати огляд сайту фахівцем із доступності,
+                ручні тести клавіатури та тестування зі скрінрідером. <span>Фахівці компанії Access Lab готові
+                  допомогти вам на вашому шляху до доступності.</span>
+              </p>
+            </div>
+            <div class="content-next__email">Напишіть нам: <a class="content-next__email_link"
+                href="mailto:info@accesslab.com.ua">info@accesslab.com.ua</a></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__content content-footer">
+            <div class="content-footer__logo logo-footer">
+                <div class="logo-footer__text _icon-logo">Access Bot <span>by</span></div>
+                <a class="logo-footer__images-ibg" href="#">
+                    <picture><source srcset="img/logo-footer.webp" type="image/webp"><img class="logo-footer__img" src="img/logo-footer.png" alt="Логотип Access Lab"></picture>
+                </a>
+                <a class="logo-footer__telegram _icon-telegram" href="#" aria-labelledby="Іконка Telegram Link"></a>
+            </div>
+        </div>
+        <div class="footer__copy copy-footer">
+            <div class="copy-footer__text">
+                <p>
+                    Розроблено в <a class="copy-footer__link" href="#">Access Lab</a> (ТОВ "Лабораторія цифрової
+                    доступності").
+                </p>
+                <p>
+                    Працює на <a class="copy-footer__link" href="#">Axe Core</a> .
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+  </div>
+  
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20230111215200"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+  <script src="js/app.min.js?_v=20230111215200"></script>
+</body>
+
+</html>

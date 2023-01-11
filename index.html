@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230111215200">
+    <title></title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+   <div class="header__container">
+    <div class="header__logo logo">
+      <a class="logo__images" href="#">
+         <img class="logo__img" src="img/logo.svg" alt="Логотип Access Bot">
+      </a>
+    </div>
+   </div>
+</header>
+    <main class="page">
+      <section class="page__grade grade-page">
+        <div class="grade-page__container">
+          <h1 class="grade-page__title">
+            Інструмент для оцінки доступності вебсайтів
+          </h1>
+          <form class="grade-page__form form-grade">
+            <div class="form-grade__item item-form-grade">
+              <input class="item-form-grade__input" type="url" aria-labelledby="Адреса сайта для оцінки"
+                placeholder="https://сайт.com.ua" required>
+              <label class="item-form-grade__label">Адреса сайту <span>(з https або http):</span></label>
+            </div>
+            <button class="form-grade__btn btn" type="submit">Тестувати</button>
+          </form>
+        </div>
+      </section>
+      <section class="page__description description">
+        <div class="description__container">
+          <div class="description__content content-description">
+            <div class="content-description__how how-content">
+              <h2 class="how-content__title">
+                Як це працює?
+              </h2>
+              <div class="how-content__text">
+                Вкажіть адресу головної сторінки сайту і отримайте результат тестування п'яти сторінок або вкажіть
+                адресу внутрішньої сторінки і отримайте результат виключно для цієї сторінки.
+              </div>
+            </div>
+            <div class="content-description__bot bot-content">
+              <a class="bot-content__link _icon-telegram" href="results.html" aria-labelledby="Telegram Link"><span>Підключити</span></a>
+              <div class="bot-content__text text-bot">
+                Ще більше можливостей у <a class="text-bot__link" href="#">Access Bot для Telegram:</a> підключайте щотижневий моніторинг
+                доступності вашого сайту.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__content content-footer">
+            <div class="content-footer__logo logo-footer">
+                <div class="logo-footer__text _icon-logo">Access Bot <span>by</span></div>
+                <a class="logo-footer__images-ibg" href="#">
+                    <picture><source srcset="img/logo-footer.webp" type="image/webp"><img class="logo-footer__img" src="img/logo-footer.png" alt="Логотип Access Lab"></picture>
+                </a>
+                <a class="logo-footer__telegram _icon-telegram" href="#" aria-labelledby="Іконка Telegram Link"></a>
+            </div>
+        </div>
+        <div class="footer__copy copy-footer">
+            <div class="copy-footer__text">
+                <p>
+                    Розроблено в <a class="copy-footer__link" href="#">Access Lab</a> (ТОВ "Лабораторія цифрової
+                    доступності").
+                </p>
+                <p>
+                    Працює на <a class="copy-footer__link" href="#">Axe Core</a> .
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+  </div>
+  
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20230111215200"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+  <script src="js/app.min.js?_v=20230111215200"></script>
+</body>
+
+</html>
